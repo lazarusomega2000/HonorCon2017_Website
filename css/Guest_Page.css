@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document specific to the Home Page portion of the HC 2017 Web Presence */
+
+body {
+	background-image: url(../images/HonorCon_Guests/Guests-Page.png); /*this is all that will change between pages */
+}
+
+.homebutton{
+	background-image: url(../images/Main_Menu_Parts/home.png);
+}
+
+.homebutton:hover{
+	background-image: url(../images/Main_Menu_Parts/home-over.png);
+}
+
+.programbutton{
+	background-image: url(../images/Main_Menu_Parts/programming.png);
+}
+
+.programbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/programming-over.png);
+}
+
+.venuebutton{
+	background-image: url(../images/Main_Menu_Parts/venue.png);
+}
+
+.venuebutton:hover{
+	background-image: url(../images/Main_Menu_Parts/venue-over.png);
+}
+
+.guestsbutton{
+	background-image: url(../images/Main_Menu_Parts/guests-active.png);
+}
+
+.contactbutton{
+	background-image: url(../images/Main_Menu_Parts/contact.png);
+}
+
+.contactbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/contact-over.png);
+}
+
+.faqbutton{
+	background-image: url(../images/Main_Menu_Parts/faq.png);
+}
+
+.faqbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/faq-over.png);
+}
+
+.contentarea{
+	text-align: center;
+	overflow-y: scroll;
+	display:inline-flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+
+.guest {
+	max-width:50%;
+	min-width:25%;
+}
+
+@media screen and  (max-width:980px){
+	
+	.guest{
+		height:150px;
+		width:150px;
+	}
+	
+	.contentarea{
+		height:auto;
+		overflow-y:inherit;
+	}
+	
+}

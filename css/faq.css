@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+img {
+	max-width: 100%;
+}
+
+#slideshow:after, #slideshow2:after, #slideshow3:after  {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#slideshow img, #slideshow2 img, #slideshow3 img {
+	float: left;
+	margin: 0 -100% 0 0;
+}
+
+li{
+	list-style: circle;
+	color: white;
+}
+
+h1 {
+	font-family: SerpentineBold;
+}
+
+body {
+	background-image: url(../images/HonorCon_Venue/venue-background.png); /*this is all that will change between pages */
+}
+
+.homebutton{
+	background-image: url(../images/Main_Menu_Parts/home.png);
+}
+
+.homebutton:hover{
+	background-image: url(../images/Main_Menu_Parts/home-over.png);
+}
+
+.programbutton{
+	background-image: url(../images/Main_Menu_Parts/programming.png);
+}
+
+.programbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/programming-over.png);
+}
+
+.venuebutton{
+	background-image: url(../images/Main_Menu_Parts/venue.png);
+}
+
+.venuebutton:hover{
+	background-image: url(../images/Main_Menu_Parts/venue-over.png)
+}
+
+.guestsbutton{
+	background-image: url(../images/Main_Menu_Parts/guests.png);
+}
+
+.guestsbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/guests-over.png);
+}
+
+.contactbutton{
+	background-image: url(../images/Main_Menu_Parts/contact.png);
+}
+
+.contactbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/contact-over.png);
+}
+
+.faqbutton{
+	background-image: url(../images/Main_Menu_Parts/faq-active.png);
+}
+
+.column{
+	background-color: rgba(0,0,0,.5);
+	height:98%;
+	width:32%;
+	float:left;
+	margin-top:1%;
+	margin-right:1%;
+}
+
+.contentarea{
+	background-color:rgba(0,0,0,.5);
+	text-align:left;
+	overflow-y: scroll;
+}
+
+ /* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #000;
+	border-radius: 25px;
+    color: #333;
+    cursor: pointer;
+    padding: 2px;
+    width: 100%;
+    text-align: left;
+    border: 2px solid #F2A22F;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #333;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color:rgba(0,0,0,.5);
+    display: none;
+} 
+
+@media screen and  (max-width:959px){
+	.column{
+		width:100%;
+	}
+	
+}

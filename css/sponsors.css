@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* OLD FOLLOWS */
+
+.sponsor1 {
+	background-image:url(../images/Sponsor_Graphics/atomic_empire.png);
+	width:16%;
+}
+
+.sponsor1:hover {
+	background-image: url(../images/Sponsor_Graphics/atomic_empire-hover.png);
+	width:16%;
+}
+
+.sponsor2 {
+	background-image: url(../images/Sponsor_Graphics/FinalSword.png);
+	width:16%;
+}
+
+.sponsor2:hover{
+	background-image: url(../images/Sponsor_Graphics/FinalSword-hover.png);
+	width:16%;
+}
+
+.sponsor3 {
+	background-image: url(../images/Sponsor_Graphics/Ice_Doxies.png);
+	width:8%;
+}
+
+.sponsor3:hover{
+	background-image: url(../images/Sponsor_Graphics/Ice_Doxies-hover.png);
+	width:8%;
+}
+
+.sponsor4 {
+	background-image: url();
+	width:16%;
+}
+
+.sponsor4:hover{
+	background-image: url();
+	width:16%;
+}
+
+.sponsor5 {
+	background-image: url();
+	width:8%;
+}
+
+.sponsor5:hover {
+	background-image: url();
+	width: 8%;
+}
+
+.sponsor6 {
+	background-image: url();
+	width:8%;
+}
+
+.sponsor6:hover {
+	background-image: url();
+	width:8%;
+}
+
+.sponsor1, .sponsor2, .sponsor3, .sponsor4, .sponsor5, .sponsor6 {
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:100%;
+	float:left;
+}
+
+@media screen and  (max-width:980px){
+	
+	.sponsor1, .sponsor2, .sponsor3, .sponsor4, .sponsor1:hover, .sponsor2:hover, .sponsor3:hover, .sponsor4:hover{
+		min-width: 100px;
+		min-height:40px;
+	}
+	
+	
+	.sponsor5, .sponsor6, .sponsor5:hover, .sponsor6:hover{
+		min-width: 100px;
+		min-height:40px;
+	}
+	
+}

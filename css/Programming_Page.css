@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document specific to the Home Page portion of the HC 2017 Web Presence */
+
+body {
+	background-image: url(../images/HonorCon_Programming/programming-page-background.png);
+}
+
+.homebutton{
+	background-image: url(../images/Main_Menu_Parts/home.png);
+}
+
+.homebutton:hover{
+	background-image: url(../images/Main_Menu_Parts/home-over.png);
+}
+
+.programbutton{
+	background-image: url(../images/Main_Menu_Parts/programming-active.png);
+}
+
+.venuebutton{
+	background-image: url(../images/Main_Menu_Parts/venue.png);
+}
+
+.venuebutton:hover{
+	background-image: url(../images/Main_Menu_Parts/venue-over.png);
+}
+
+.guestsbutton{
+	background-image: url(../images/Main_Menu_Parts/guests.png);
+}
+
+.guestsbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/guests-over.png);
+}
+
+.contactbutton{
+	background-image: url(../images/Main_Menu_Parts/contact.png);
+}
+
+.contactbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/contact-over.png);
+}
+
+.faqbutton{
+	background-image: url(../images/Main_Menu_Parts/faq.png);
+}
+
+.faqbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/faq-over.png);
+}
+
+.column{
+	background-color: rgba(0,0,0,.5);
+	height:98%;
+	width:49%;
+	float:left;
+	margin-top:1%;
+	margin-right:1%;
+}
+
+.halfcolumn{
+	background-color: rgba(0,0,0,.5);
+	height:48%;
+	width:49%;
+	float:left;
+	margin-top:1%;
+}
+
+.halfcolumncontent{
+	width:100%;
+	height: 85%;
+	overflow-y: auto;
+	float:left;
+	padding:1%;
+}
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #000;
+	border-radius: 25px;
+    color: #333;
+    cursor: pointer;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #F2A22F;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion.active, .accordion:hover {
+    background-color: #333;
+}
+
+.PanelList{
+	text-align: center;
+}
+
+h1, h2 {
+	font-family: SerpentineBold;
+}
+
+@media screen and  (max-width:980px){
+	
+	.column, .halfcolumn {
+		width:100%;
+	}
+	
+	fieldset {
+		display: inline-block;
+		border-radius: 1em;
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-bottom: 20px;
+		border: 3px solid #F2A22F;
+	}
+}

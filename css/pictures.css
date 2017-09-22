@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+.guest{
+	height:300px;
+	width:300px;
+	float:left;
+	z-index:100;
+	text-align: center;
+}
+
+.guest:hover{
+	background-color: rgba(0,0,0,.5);
+}
+
+.guestname{
+	position: relative;
+	background-color: rgba(0,0,0,.5);
+	margin:3%;
+	bottom:25%;
+	z-index:101;
+}
+
+.guestwriting{
+	opacity:1;
+	text-shadow: 1px 3px black;
+	width:100%;
+}

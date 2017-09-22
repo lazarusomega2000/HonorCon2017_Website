@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+img {
+	max-width: 100%;
+}
+
+#slideshow:after, #slideshow2:after, #slideshow3:after  {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#slideshow img, #slideshow2 img, #slideshow3 img {
+	float: left;
+	margin: 0 -100% 0 0;
+}
+
+li{
+	list-style: circle;
+	color: white;
+}
+
+body {
+	background-image: url(../images/HonorCon_Venue/venue-background.png); /*this is all that will change between pages */

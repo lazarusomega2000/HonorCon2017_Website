@@ -1,0 +1,357 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS Reset 
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,input,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+This part is for text. h1 and h2 are headers */
+
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+@font-face {
+	font-family: SerpentineBold;
+	src:url(../fonts/SerpentineDBol.woff);
+}
+
+body {
+	overflow:hidden;
+	margin: 0PX;
+	background-size: cover; /* this is what makes the background image rescale to the container size */
+	background-position: center center;
+	background-attachment: fixed;
+	top: 0px;
+	bottom: 0px;
+	height: 100vw;
+	z-index: -99;
+}
+
+/* this starts detailing the fonts */
+
+a{
+	border: 0px;
+}
+
+a:link{
+	color:#F2A22F; 
+	background-color:transparent; 
+	text-decoration:none
+}
+
+a:visited{
+	color:pink; 
+	background-color:transparent; 
+	text-decoration:none
+}
+
+a:hover{
+	color:red; 
+	background-color:transparent; 
+	text-decoration:underline
+}
+
+a:active{
+	color:greenyellow; 
+	background-color:transparent; 
+	text-decoration:underline
+}
+
+h1, h2, p, td, tr, tbody {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: 0px;
+}
+
+h1, h2, h3 {
+	color:#F2A22F;
+}
+
+h1 {
+	font-size: 4vmin;
+	text-shadow: 1px 3px black;
+}
+
+h2 {
+	font-size: 3.5vmin;
+}
+
+h3 {
+	font-size: 2.5vmin;
+	/* line-height: 2px; */
+}
+
+p, h4 {
+	color: white;
+	font-size: 2vmin;
+}
+
+li {
+	list-style: circle;
+	color: white;
+}
+
+										/* PAGE NAVIGATION PANEL */
+
+.navigation{
+	position:absolute;
+	right:0;
+	top:40%;
+	width: 40%;
+	min-width:250px;
+	margin-right:2%;
+	height: 40%
+}
+
+#homepagemenu{
+	height:6%;
+}
+										/* HEADER CONTENT CRAP */
+
+.trmnlogowrapper{
+	margin-top:2%;
+	margin-right:2%;
+	position:absolute;
+	top:0px;
+	right:0px;
+	height:17%;
+	z-index:1;
+}
+
+.charitylogowrapper{
+	margin-bottom:2%;
+	margin-right:2%;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	height:17%;
+	z-index:1;
+}
+
+.trmnlogo {
+	height:100%;
+	width:auto;
+}
+
+.hclogowrapper{
+	margin-top:2%;
+	margin-left:2%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:17%;
+	z-index:1;
+	width:55%;
+}
+
+.hotellogo {
+	height:100%;
+}
+
+.hotelwrapper{
+	float:left;
+	margin-top:3%;
+	margin-right:2%;
+	position:absolute;
+	top:0px;
+	right:20%;
+	height:17%;
+	z-index:1;
+}
+										/* HUD UNDERLAY */
+
+.hudcircle{
+	margin-right:2%;
+	margin-top:2%;
+	position:absolute;
+	top:0px;
+	right:0px;
+	height: 41%;
+	z-index:-1;
+}
+
+								/* CONTENT AREA SETUP */
+
+.contentarea{
+	position:absolute;
+	top:25%;
+	width:75%;
+	height:60%;
+	margin-left:2%;
+	z-index:1;
+	text-align:justify;
+}
+
+								/* FOOTER CONTENT CRAP */
+
+footer{
+	position: absolute;
+	bottom: 0px;
+	height:10%;
+	width:100%;
+	margin-bottom:2%;
+	margin-left:2%;
+	margin-right:2%;
+}
+
+.sponsorrow {
+	background-image: url(../images/HUD_Overlay_Parts/hud-overlay-sponsor-bar.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:100%;
+	width:96%;
+	float:left;
+	padding-left:3%;
+	padding-right:3%;
+	margin-bottom:3%;
+}
+
+.title{
+	text-align: center;
+	background-color:rgba(0,0,0,1);
+}
+
+.content{
+	width:100%;
+	height: 93%;
+	overflow-y: auto;
+	float:left;
+	padding:1%;
+}
+
+.socmediabox {
+	padding-top: 10%;
+	height:15%;
+}
+
+.twitter-follow, .fb-follow, .Instagram-follow {
+	padding: 2%;
+	float: right;
+}
+
+.homebutton, .programbutton, .venuebutton, .guestsbutton, .contactbutton, .faqbutton {
+	height:100%;
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: contain;
+	margin: 3px;
+}
+
+@media screen and  (max-width:959px){
+
+	body{
+		overflow: auto;
+	}
+	
+	.hclogowrapper{
+		background-position: top;
+		position:inherit;
+		float:left;
+		margin:2%;
+		width:96%;
+		height:auto;
+		z-index: 0;
+	}
+	
+	#homepagemenu{
+		float:left;
+		height:4%;
+	}
+	
+	.navigation{
+		position:inherit;
+		float:left;
+		top:24%;
+		width: 96%;
+		min-width:250px;
+		margin-left:0%;
+		margin-bottom:1%;
+		z-index: 0;
+		display:inline-block;
+	}
+	
+	.homebutton, .programbutton, .venuebutton, .guestsbutton, .contactbutton, .faqbutton {
+		width: 14%;
+		float: left;
+		background-position: center center;
+	}	
+	
+	.socmediabox {
+		padding-top: 0px;
+		height: auto;
+		float:left;
+	}
+	
+	.contentarea{
+		position:inherit;
+		float:left;
+		width:96%;
+		top:28%;
+		height:auto;
+		z-index:0;
+	}
+	
+	footer{
+		position:inherit;
+		width:96%;
+		z-index:0;
+	}
+	
+	.trmnlogowrapper, .charitylogowrapper{
+		position:inherit;
+		text-align: center;
+		min-height: 75px;
+		width:100%;
+		float:left;
+		justify-content:center;
+		z-index:0;
+	}
+	
+	.hotelwrapper{
+		position:inherit;
+		text-align: center;
+		min-height: 150px;
+		width:100%;
+		float:left;
+		justify-content:center;
+		margin-bottom: 2%;
+		margin-top: 2%;
+		z-index:0;
+	}
+	
+	.hudcircle{
+		visibility: hidden;
+	}
+	
+	.sponsorrow{
+		background: none;
+		display:flex;
+		justify-content:space-around;
+		flex-wrap: wrap;
+	}
+	
+	p {
+		font-size: 10px;
+	}
+	
+	h1 {
+		font-size: 14px;
+	}
+	
+	h2{
+		font-size: 12px;
+	}
+	
+	h3{
+		font-size: 10px;
+	}
+}

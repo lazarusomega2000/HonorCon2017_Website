@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url(../images/HonorCon_Programming/programming-page-background.png); /*this is all that will change between pages */
+}
+
+#main_content {
+	background-color: rgba(0,0,0,0);
+}
+
+#Panels, #Contests, #Auction {
+	background-color: rgba(0,0,0,.75);
+	border-radius: 15px;
+}

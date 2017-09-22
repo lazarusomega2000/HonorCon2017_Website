@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document specific to the Home Page portion of the HC 2017 Web Presence */
+
+body {
+	background-image: url(../images/HonorCon_Home/Home-Page-background.png); /*this is all that will change between pages */
+}
+
+.homebutton{
+	background-image: url(../images/Main_Menu_Parts/home.png);
+}
+
+.homebutton:hover{
+	background-image: url(../images/Main_Menu_Parts/home-over.png);
+}
+
+.programbutton{
+	background-image: url(../images/Main_Menu_Parts/programming.png);
+}
+
+.programbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/programming-over.png);
+}
+
+.venuebutton{
+	background-image: url(../images/Main_Menu_Parts/venue.png);
+}
+
+.venuebutton:hover{
+	background-image: url(../images/Main_Menu_Parts/venue-over.png);
+}
+
+.guestsbutton{
+	background-image: url(../images/Main_Menu_Parts/guests.png);
+}
+
+.guestsbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/guests-over.png);
+}
+
+.contactbutton{
+	background-image: url(../images/Main_Menu_Parts/contact.png);
+}
+
+.contactbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/contact-over.png);
+}
+
+.faqbutton{
+	background-image: url(../images/Main_Menu_Parts/faq.png);
+}
+
+.faqbutton:hover{
+	background-image: url(../images/Main_Menu_Parts/faq-over.png);
+}
+
+
+.contentarea {
+	padding: 2%;
+	background: rgba(0,0,0,0.8);
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+@media screen and  (max-width:959px){
+	
+}

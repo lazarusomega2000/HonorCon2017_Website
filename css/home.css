@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document specific to the Home Page portion of the HC 2017 Web Presence */
+
+body {
+	background-image: url(../images/HonorCon_Home/Home-Page-background.png); /*this is all that will change between pages */
+}
+
+.panel-default {
+	border-radius:18px;
+}
+
+.panel-default > .panel-heading {
+	background: rgba(0,0,0,0);
+}
